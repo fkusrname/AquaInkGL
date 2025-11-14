@@ -8,16 +8,7 @@
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0, user-scalable=no" />
-        <title>AquaInkGL丨Life is actually very interesting</title>
-        <meta
-            name="description"
-            content="AquaInkGL,WishMeLz,WishMeLz-home,Life is actually very interesting。" />
-        <meta
-            name="keywords"
-            content="AquaInkGL,WishMeLz,Life is actually very interesting,wish,webgl" />
-        <meta
-            property="og:url"
-            content="https://github.com/WishMelz/AquaInkGL/" />
+        <title>nm.bi</title>
 
         <script
             type="text/javascript"
@@ -175,8 +166,50 @@
         <canvas></canvas>
         <div class="wrap">
             <div class="main">
-                <h1>AquaInkGL</h1>
-                <h2>Life is actually very interesting</h2>
+                  <h1 id="randomDomain"></h1>
+
+    <script>
+        const charPool = '0123456789abcdefghijklmnopqrstuvwxyz';
+        const suffix = '.nm.bi';
+        const h1Element = document.getElementById('randomDomain');
+
+        function generateRandomChars() {
+            const length = Math.floor(Math.random() * 6) + 1;
+            let randomStr = '';
+            for (let i = 0; i < length; i++) {
+                const randomIndex = Math.floor(Math.random() * charPool.length);
+                randomStr += charPool[randomIndex];
+            }
+            return randomStr + suffix;
+        }
+
+        h1Element.textContent = generateRandomChars();
+        setInterval(() => {
+            h1Element.textContent = generateRandomChars();
+        }, 700);
+    </script>
+ <h1 id="randomEmail"></h1>
+
+    <script>
+        const charPool = '0123456789abcdefghijklmnopqrstuvwxyz';
+        const suffix = '@nm.bi';
+        const h1Element = document.getElementById('randomEmail');
+
+        function generateRandomChars() {
+            const length = Math.floor(Math.random() * 6) + 1;
+            let randomStr = '';
+            for (let i = 0; i < length; i++) {
+                const randomIndex = Math.floor(Math.random() * charPool.length);
+                randomStr += charPool[randomIndex];
+            }
+            return randomStr + suffix;
+        }
+
+        h1Element.textContent = generateRandomChars();
+        setInterval(() => {
+            h1Element.textContent = generateRandomChars();
+        }, 700);
+    </script>
             </div>
 
             <footer class="site-footer">
